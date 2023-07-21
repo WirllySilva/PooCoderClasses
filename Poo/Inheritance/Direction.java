@@ -1,4 +1,4 @@
-package Poo.Inheritance01;
+package Poo.Inheritance;
 
 public enum Direction {
 

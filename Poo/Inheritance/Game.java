@@ -1,4 +1,4 @@
-package Poo.Inheritance01;
+package Poo.Inheritance;
 
 public class Game {
     public static void main(String[] args) {
