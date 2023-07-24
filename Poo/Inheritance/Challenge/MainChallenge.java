@@ -12,6 +12,7 @@ public class MainChallenge {
         f11.brake();
         f11.brake();
         f11.brake();
+        f11.speedUp();
 
         Civic civ02 = new Civic();
 
