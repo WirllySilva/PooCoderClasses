@@ -4,6 +4,11 @@ public class Car {
 
     int currentSpeed = 0;
     boolean working = false;
+    final int MAXIMUM_SPEED;
+
+    Car(int maximumSpeed) {
+        MAXIMUM_SPEED = maximumSpeed;
+    }
 
     void startEngine() {
         if(working == false) {
@@ -16,6 +21,9 @@ public class Car {
     
     void speedUp() {
         if(working) {
+            if(currentSpeed + 5 > MAXIMUM_SPEED) {
+                currentSpeed = MAXIMUM_SPEED;
+            }
             currentSpeed = currentSpeed + 5;
             System.out.println(currentSpeed);
         } else {

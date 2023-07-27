@@ -2,6 +2,14 @@ package Poo.Inheritance.Challenge;
 
 public class Ferrari extends Car {
 
+    Ferrari() {
+        this(320);
+    }
+
+    Ferrari(int maximumSpeed) {
+        super(maximumSpeed);
+    }
+
     @Override
     void brake() {
        if(currentSpeed > 0) {
